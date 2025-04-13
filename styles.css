@@ -140,3 +140,17 @@ h3 {
     border: 2px solid #ffa5d2;
     border-top: none;
 }
+
+.messengers {
+    text-decoration: none;
+    padding: 20px;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.messages {
+    text-decoration: none;
+    padding: 20px;
+    grid-column: 2;
+    grid-row: 1;
+}
