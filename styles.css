@@ -19,6 +19,10 @@ img {
     margin: 50px;
     border: 2px solid #a1da8a;
 }
+
+#yeah {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 /* nav bar */
 ul {
     background-color: #404283 ;
