@@ -1,14 +1,28 @@
 
 #title {
-    text-align: left;
-    color: #bee267;
+    text-align: center;
+    color: #a0e8fc;
     font-size: 15px;
 }
 
+img {
+    display: block;
+    margin: auto;
+}
+
+#personalInfo {
+    font-family:Arial, Helvetica, sans-serif;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: #e1fdcb;
+    margin: 50px;
+    border: 2px solid #a1da8a;
+}
 /* nav bar */
 ul {
-    background-color: #68c4af ;
-	font-family: Arial, Helvetica, sans-serif;
+    background-color: #404283 ;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	list-style-type: none;
 	overflow: hidden;
 	padding: 10px;
@@ -27,20 +41,43 @@ li a {
 }
 
 a:hover {
-    color:black;
+    background-color: #a0e8fc;
+    color: #422e72;
+    transition: 0.3s;
 }
 
 /* containers */
 .container {
     display: grid;
-    background-color: #e1dee7;
+    background-color: #eaf5ff;
     border-radius: 25px;
-    grid-template-columns: 10px, 70px, 20px, 20px;
+    grid-template-columns: 20px, 80px;
     grid-auto-rows: auto;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
+.item1 {
+    text-decoration: none;
+    padding: 20px;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.item2 {
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 20px;
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.item3 {
+    text-decoration: none;
+    padding: 20px;
+	grid-column: 1;
+	grid-row: 2;
+}
 
 .containerTitle {
     display: grid;
@@ -64,32 +101,6 @@ a:hover {
     margin-right: 200px;
 }
 
-
-#font {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.item1 {
-    text-decoration: none;
-    padding: 20px;
-	grid-column: 1;
-	grid-row: 1;
-}
-
-.item2 {
-    padding: 20px;
-    text-decoration: none;
-	grid-column: 2;
-	grid-row: 1;
-}
-
-.item3 {
-    padding: 20px;
-    text-decoration: none;
-	grid-column: 3;
-	grid-row: 1;
-}
-
 h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -99,30 +110,33 @@ h3 {
 .tab {
     overflow: hidden;
     border: none;
-    background-color:#d5d0dd;
+    background-color:#ffa5d2;
 }
 
 .tab button {
-    background-color: #d5d0dd;
+    background-color: #ffa5d2;
     cursor: pointer;
     float: left;
     border: none;
     padding: 15px;
     transition: 0.3s;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .tab button:hover {
-    background-color: #cc0000;
+    background-color: #ff75ba;
+
 }
 
 .tab button.active {
-    background-color: #bee267;
+    border-top: 2px solid #ffa5d2;
+    border-left: 2px solid #ffa5d2;
+    background-color: #eaf5ff;
 }
 
 .tabcontent {
     display: none;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #ffa5d2;
     border-top: none;
 }
