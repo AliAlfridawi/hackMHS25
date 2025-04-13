@@ -49,7 +49,7 @@ a:hover {
 /* containers */
 .container {
     display: grid;
-    background-color: #eaf5ff;
+    background-color: #a0e8fc59;
     border-radius: 25px;
     grid-template-columns: 20px, 80px;
     grid-auto-rows: auto;
@@ -110,11 +110,11 @@ h3 {
 .tab {
     overflow: hidden;
     border: none;
-    background-color:#ffa5d2;
+    background-color:#e58eff;
 }
 
 .tab button {
-    background-color: #ffa5d2;
+    background-color: #e58eff;
     cursor: pointer;
     float: left;
     border: none;
@@ -124,33 +124,57 @@ h3 {
 }
 
 .tab button:hover {
-    background-color: #ff75ba;
+    background-color: #b444d6;
 
 }
 
 .tab button.active {
-    border-top: 2px solid #ffa5d2;
-    border-left: 2px solid #ffa5d2;
-    background-color: #eaf5ff;
+    border-top: 2px solid #b444d6;
+    border-left: 2px solid #b444d6;
+    background-color: #f5d3ff;
 }
 
 .tabcontent {
     display: none;
     padding: 20px;
-    border: 2px solid #ffa5d2;
+    border: 2px solid #b444d6;
     border-top: none;
+    background-color: #f5d3ff;
+
+}
+
+/* messages.html styles */
+
+.messagesContainer {
+    display: grid;
+    border-radius: 25px;
+    grid-template-columns: 10px, 80px;
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .messengers {
+    background-color: white;
     text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
 	grid-column: 1;
 	grid-row: 1;
+    border-radius: 25px;
+    border: 10px solid #f0cffa;
 }
 
 .messages {
+    background-color: white;
     text-decoration: none;
     padding: 20px;
+    font-family:Arial, Helvetica, sans-serif;
     grid-column: 2;
     grid-row: 1;
+    border-radius: 25px;
+    border: 10px solid #f0cffa;
+
+
 }
