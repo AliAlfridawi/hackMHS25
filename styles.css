@@ -13,7 +13,7 @@ img {
 #personalInfo {
     font-family:Arial, Helvetica, sans-serif;
     width: auto;
-    height: auto;
+    height: 400px;
     padding: 10px;
     background-color: #e1fdcb;
     margin: 50px;
@@ -69,7 +69,7 @@ a:hover {
     padding: 20px;
     margin-right: 20px;
 	grid-column: 2;
-	grid-row: 1;
+	grid-row: 2;
 }
 
 .item3 {
@@ -140,9 +140,13 @@ h3 {
     border: 2px solid #b444d6;
     border-top: none;
     background-color: #f5d3ff;
-
 }
 
+.imgGroup {
+    width: 300px;
+    padding: 10 px;
+    margin: 10px;
+}
 /* messages.html styles */
 
 .messagesContainer {
@@ -177,4 +181,45 @@ h3 {
     border: 10px solid #f0cffa;
 
 
+}
+
+/*groups*/
+
+.groupContain {
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-auto-rows: 200px;  
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.g1 {
+    text-decoration: none;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.g2 {
+    text-decoration: none;
+    text-align: center;
+    margin: 30px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.button {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #9d38bc;
+    background-color: #f0cffa ;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 13px;
+    text-decoration: none;
+}
+
+#a:hover {
+    background-color: #9d38bc;
+    color: #f0cffa;
+    transition: 0.3s;
 }
