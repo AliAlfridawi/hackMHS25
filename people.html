@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html> 
+   <head> 
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+      <link rel="stylesheet" href="styles.css">
+    </head>
+<button id="changePerson" onclick="changePerson()">Change Person</button>
+
+<h2 id="personalInfo"></h2>
+
+    <p id="person">  
+test
+
+</p>    
+<script>
+const listOfQuestions =[localStorage.getItem('outdoor'),localStorage.getItem('food'),localStorage.getItem('reading'),localStorage.getItem('games'),localStorage.getItem('Sports')];
+const displayedHobies = listOfQuestions.join(", ");
+let person = "None";
+const names = ["Chris", "Andy", "Vincent", "Theo", "James", "Johm", "Carl", "Thomas", "Sarah", "Amy", "Taylor"];
+
+const Chris= ["false","true","false","true","true"];
+const Andy= ["true","true","false","true","false"];
+const Vincent= ["false","true","false","true","true"];
+const Theo= ["true","true","false","false","false"];
+const James= ["false","true","true","false","true"];
+const Johm= ["true","false","false","false","false"];
+const Carl= ["false","true","false","true","true"];
+const Thomas= ["true","true","true","true","true"];
+const Sarah= ["false","true","false","true","false"];
+const Amy= ["false","true","false","true","false"];
+const Taylor= ["false","false","false","false","false"];
+const peoples = [Chris, Andy, Vincent, Theo, James, Johm, Carl, Thomas, Sarah, Amy, Taylor];
+
+
+function changePerson(){
+     p =0;    
+     k =0;
+
+    for(let i = 0; i < peoples.length; i++){
+    for(let j = 0;j < listOfQuestions.length; j++){
+        if(listOfQuestions[j]==peoples[i][j]){
+k++;
+        }
+    }
+if (k>p){
+    p = k;
+    console.log(peoples[i]);
+    person = names[i];
+}
+k =0;
+}
+    document.getElementById("person").innerHTML = person;
+}
+
+function displayHobbie() {
+    document.getElementById("personalInfo").innerHTML = displayedHobies;
+}
+
+
+
+</script>
+</html>
