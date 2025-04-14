@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color: #111365;">
+    <header class = "containerTitle">
+        <h1 id="title" class = "cont1">
+            <pre>
+                   _____                     
+  ____  __  ______/ ___/____  ____ _________ 
+ / __ \/ / / / ___\__ \/ __ \/ __ `/ ___/ _ \
+/ /_/ / /_/ / /  ___/ / /_/ / /_/ / /__/  __/
+\____/\__,_/_/  /____/ .___/\__,_/\___/\___/ 
+                    /_/                      
+            </pre>
+        </h1>
+        <div class = "cont2">
+            <ul>
+                <li><a href = "ourSpace.html">home</a></li>
+                <li><a href = "groups.html">groups</a></li>
+                <li><a href = "people.html">people</a></li>
+                <li><a href = "messages.html">messages</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class = "container">
+        <h2 id = "qheader">Questions</h2>
+            <div class = "questionStyle">
+                <label>Do you enjoy outdoor activities?</label><br>
+                    <input type="radio" id="outdoorTrue" name="outdoor" value="true" required>
+                    <label for="outdoorTrue">True</label>
+                <input type="radio" id="outdoorFalse" name="outdoor" value="false">
+                <label for="outdoorFalse">False</label>
+
+            </div>
+            <br>
+            <div class = "questionStyle">
+                <label id = test>Do you like trying new foods?</label><br>
+                <input type="radio" id="foodTrue" name="food" value="true" required>
+                <label for="foodTrue">True</label>
+                <input type="radio" id="foodFalse" name="food" value="false">
+                <label for="foodFalse">False</label>
+            </div>
+            <br>
+            <div class = "questionStyle">
+                <label>Do you prefer reading over watching TV?</label><br>
+                <input type="radio" id="readingTrue" name="reading" value="true" required>
+                <label for="readingTrue">True</label>
+                <input type="radio" id="readingFalse" name="reading" value="false">
+                <label for="readingFalse">False</label>
+            </div>
+            `<br>
+            <div class = "questionStyle">
+                <label id = test>Do you like playing video games?</label><br>
+                <input type="radio" id="foodTrue" name="games" value="true" required>
+                <label for="foodTrue">True</label>
+                <input type="radio" id="foodFalse" name="games" value="false">
+                <label for="foodFalse">False</label>
+            </div>
+            <br>
+            <div class = "questionStyle">
+                <label id = test>Do you like Sports?</label><br>
+                <input type="radio" id="foodTrue" name="Sports" value="true" required>
+                <label for="foodTrue">True</label>
+                <input type="radio" id="foodFalse" name="Sports" value="false">
+                <label for="foodFalse">False</label>
+                
+            </div>
+           <button class = "submit" type="submit" onclick="move()">Submit</button>
+        </div>
+        <script src="stupidScript.js"></script>
+    </body>
+</html>

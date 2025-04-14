@@ -6,14 +6,37 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
       <link rel="stylesheet" href="styles.css">
     </head>
-<button id="changePerson" onclick="changePerson()">Change Person</button>
 
+    <body style="background-color: #111365;">
+    <header class = "containerTitle">
+        <h1 id="title" class = "cont1">
+            <pre>
+                   _____                     
+  ____  __  ______/ ___/____  ____ _________ 
+ / __ \/ / / / ___\__ \/ __ \/ __ `/ ___/ _ \
+/ /_/ / /_/ / /  ___/ / /_/ / /_/ / /__/  __/
+\____/\__,_/_/  /____/ .___/\__,_/\___/\___/ 
+                    /_/                      
+            </pre>
+        </h1>
+        <div class = "cont2">
+            <ul>
+                <li><a href = "ourSpace.html">home</a></li>
+                <li><a href = "groups.html">groups</a></li>
+                <li><a href = "people.html">people</a></li>
+                <li><a href = "messages.html">messages</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+<button class = "peopleButton" id="changePerson" onclick="changePerson()">Change Person</button>
 <h2 id="personalInfo"></h2>
+<p id="person"></p>    
 
-    <p id="person">  
-test
+</body>
+</html>
 
-</p>    
 <script>
 const listOfQuestions =[localStorage.getItem('outdoor'),localStorage.getItem('food'),localStorage.getItem('reading'),localStorage.getItem('games'),localStorage.getItem('Sports')];
 const displayedHobies = listOfQuestions.join(", ");
@@ -39,26 +62,26 @@ function changePerson(){
      k =0;
 
     for(let i = 0; i < peoples.length; i++){
-    for(let j = 0;j < listOfQuestions.length; j++){
-        if(listOfQuestions[j]==peoples[i][j]){
-k++;
+        for(let j = 0;j < listOfQuestions.length; j++){
+            if(listOfQuestions[j]==peoples[i][j]){
+                k++;
+            }
         }
+    
+        if (k>p){
+            p = k;
+            console.log(peoples[i]);
+            person = names[i];
+        }
+        k =0;
     }
-if (k>p){
-    p = k;
-    console.log(peoples[i]);
-    person = names[i];
-}
-k =0;
-}
+    
     document.getElementById("person").innerHTML = person;
 }
 
 function displayHobbie() {
     document.getElementById("personalInfo").innerHTML = displayedHobies;
 }
-
-
 
 </script>
 </html>

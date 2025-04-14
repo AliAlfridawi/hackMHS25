@@ -114,11 +114,11 @@ h3 {
 .tab {
     overflow: hidden;
     border: none;
-    background-color:#e58eff;
+    background-color:#97ebdb;
 }
 
 .tab button {
-    background-color: #e58eff;
+    background-color: #97ebdb;
     cursor: pointer;
     float: left;
     border: none;
@@ -128,22 +128,22 @@ h3 {
 }
 
 .tab button:hover {
-    background-color: #b444d6;
+    background-color: #4fdac1;
 
 }
 
 .tab button.active {
-    border-top: 2px solid #b444d6;
-    border-left: 2px solid #b444d6;
-    background-color: #f5d3ff;
+    border-top: 2px solid #97ebdb;
+    border-left: 2px solid #97ebdb;
+    background-color: #d1fff6;
 }
 
 .tabcontent {
     display: none;
     padding: 20px;
-    border: 2px solid #b444d6;
+    border: 2px solid #97ebdb;
     border-top: none;
-    background-color: #f5d3ff;
+    background-color: #d1fff6;
 }
 
 .imgGroup {
@@ -214,8 +214,8 @@ h3 {
 .button {
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #9d38bc;
-    background-color: #f0cffa ;
+    color: #0a967c;
+    background-color: #97ebdb ;
     border-radius: 20px;
     margin: 20px;
     padding: 13px;
@@ -223,7 +223,62 @@ h3 {
 }
 
 #a:hover {
-    background-color: #9d38bc;
-    color: #f0cffa;
+    background-color: #0a967c;
+    color: #97ebdb;
     transition: 0.3s;
+}
+
+#b:hover {
+    background-color: #0a967c;
+    color: #97ebdb;
+    transition: 0.3s;
+}
+
+#c:hover {
+    background-color: #0a967c;
+    color: #97ebdb;
+    transition: 0.3s;
+}
+
+/* people/questions */
+
+.peopleButton {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0a967c;
+    background-color: #97ebdb ;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.person {
+    color: white;
+    text-align: center;
+}
+#qheader {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 170;
+    margin-left: 20px;
+}
+
+.questionStyle {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 20;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.submit {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0a967c;
+    background-color: #97ebdb ;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
 }
